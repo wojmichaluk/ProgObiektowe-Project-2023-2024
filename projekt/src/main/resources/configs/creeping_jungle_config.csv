@@ -1,0 +1,15 @@
+MapHeight,22
+MapWidth,22
+PlantStart,60
+PlantDaily,10
+PlantEnergy,30
+AnimalStart,50
+AnimalStartEnergy,250
+AnimalEnergyReproductionDepletion,30
+AnimalEnergyDailyDepletion,10
+AnimalEnergyToReproduce,70
+AnimalMutationMinimum,3
+AnimalMutationMaximum,7
+AnimalGenotypeLength,12
+VariantMap,true
+VariantAnimal,false

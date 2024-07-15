@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.TextFlow?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="agh.dg.presenters.GamePresenter"
+          styleClass="game-root"
+          fx:id="rootPane">
+    <stylesheets>
+        <URL value="@styles/game.css"/>
+    </stylesheets>
+
+    <GridPane fx:id="generalStatisticsPane" styleClass="game-statistics" GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <padding>
+            <Insets top="10" right="25" bottom="25" left="25"/>
+        </padding>
+
+        <Label text="General Statistics" GridPane.rowIndex="1" styleClass="header-label"/>
+
+        <Label text="Days:" GridPane.rowIndex="2" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsDays" GridPane.rowIndex="3" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="All animals:" GridPane.rowIndex="4" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsAnimals" GridPane.rowIndex="5" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="All plants:" GridPane.rowIndex="6" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsPlants" GridPane.rowIndex="7" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="All free fields:" GridPane.rowIndex="8" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsFreeFields" GridPane.rowIndex="9" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Most popular genotypes:" GridPane.rowIndex="10" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsBestGenotypes1" GridPane.rowIndex="11" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="generalStatisticsBestGenotypes2" GridPane.rowIndex="12" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="generalStatisticsBestGenotypes3" GridPane.rowIndex="13" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Average animals energy:" GridPane.rowIndex="14" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsAverageEnergy" GridPane.rowIndex="15" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Average animals age:" GridPane.rowIndex="16" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsAverageAge" GridPane.rowIndex="17" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Average animals children:" GridPane.rowIndex="18" styleClass="label-default"/>
+        <Label fx:id="generalStatisticsAverageChildren" GridPane.rowIndex="19" styleClass="label-default">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Button text="Stop simulation" GridPane.rowIndex="20" fx:id="startStopGame" styleClass="button-red">
+            <GridPane.margin>
+                <Insets right="10" bottom="10" left="10"/>
+            </GridPane.margin>
+        </Button>
+
+        <Button text="Show animals with most popular genotypes" GridPane.rowIndex="21"
+                fx:id="showAnimalsWithMostPopularGenotypes" styleClass="button">
+            <GridPane.margin>
+                <Insets top="5" right="10" bottom="5" left="10"/>
+            </GridPane.margin>
+        </Button>
+        <Button text="Show fields currently preferred by plants" GridPane.rowIndex="22"
+                fx:id="showPreferredFields" styleClass="button">
+            <GridPane.margin>
+                <Insets top="5" right="10" bottom="5" left="10"/>
+            </GridPane.margin>
+        </Button>
+
+    </GridPane>
+
+    <GridPane fx:id="boardPane" styleClass="game-board" GridPane.rowIndex="0" GridPane.columnIndex="1">
+
+    </GridPane>
+
+    <GridPane  GridPane.rowIndex="0" GridPane.columnIndex="2">
+        <Label text="Animal Statistics" GridPane.rowIndex="1" styleClass="animal-statistic-header"/>
+
+        <Label text="Genotype:" GridPane.rowIndex="2" styleClass="animal-statistic"/>
+        <TextFlow fx:id="animalStatisticsGenotype" GridPane.rowIndex="3" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </TextFlow>
+
+        <Label text="Energy:" GridPane.rowIndex="4" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsEnergy" GridPane.rowIndex="5" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Eaten plants:" GridPane.rowIndex="6" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsPlants" GridPane.rowIndex="7" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Children:" GridPane.rowIndex="8" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsChildren" GridPane.rowIndex="9" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Descendants:" GridPane.rowIndex="10" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsDescendants" GridPane.rowIndex="11" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Age:" GridPane.rowIndex="12" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsLifeDays" GridPane.rowIndex="13" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label text="Date of death:" GridPane.rowIndex="14" styleClass="animal-statistic"/>
+        <Label fx:id="animalStatisticsDeathDay" GridPane.rowIndex="15" styleClass="animal-statistic">
+            <GridPane.margin>
+                <Insets left="10"/>
+            </GridPane.margin>
+        </Label>
+    </GridPane>
+
+</GridPane>
