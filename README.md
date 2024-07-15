@@ -2,7 +2,7 @@
 Repository for project on Object-Oriented-Programming course at AGH University
 
 Katalog **projekt** zawiera pliki z oryginalnego repozytorium stworzonego przez [kolegę](https://github.com/michal-proc), z którym wspólnie robiłem ten projekt. 
-Niestety, w wyniku reorganizacji i porządkowania repozytoriów na GitHubie jego oryginalna postać zaginęła (jest w zmienionej formie pod [adresem](https://github.com/michal-proc/darwin-world)).
+Niestety, w wyniku reorganizacji i porządkowania repozytoriów na GitHubie jego oryginalna postać zaginęła (jest w zmienionej formie pod tym [adresem](https://github.com/michal-proc/darwin-world)).
 
 Plik *opis_projektu.md* zawiera polecenie do projektu i opis wymagań wszystkich funkcjonalności. Pobrałem dodatkowo obrazki (w katalogu **img**), do których są odniesienia w pliku. Źródłem tych obrazków jest oryginalne repozytorium z opisem projektu, do którego, jeżeli to się nie zmieni, link można znaleźć na wiadomej stronie.
 
